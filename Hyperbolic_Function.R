@@ -1,6 +1,7 @@
 
 ##### This code accompanies paper: https://www.scirp.org/journal/paperinformation?paperid=146129 #####
-##### (
+##### Copyright © 2025 Piotr Lewczuk. All rights reserved. ###########################################
+
 ##### Confirmation of the H. Reiber's original approximation
 erfc = function(x) {2*pnorm(x*sqrt(2), lower.tail=F)}
 
@@ -99,5 +100,6 @@ cat("c_hat:", c, "\t se_c_hat:", sqrt(diag(Cov_mx))[3])
 ## plotting the estimated curve
 xx = seq(1e-4, 0.7, length=1000)
 lines(xx, (a/b*sqrt(xx^2 + b^2) - c), col="green", lwd=2)
+
 
 
